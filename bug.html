@@ -1,0 +1,8 @@
+This error occurs when using Tailwind CSS's `@apply` directive with a utility class that doesn't exist or is misspelled.  For example:
+
+```html
+<div class="@apply bg-red-500 text-white">
+</div>
+```
+
+If `bg-red-500` or `text-white` aren't defined in your `tailwind.config.js` file or a plugin, this error will occur. It might not always throw a clear error message from the build process but manifest as the class simply not being applied.
